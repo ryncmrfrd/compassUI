@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Compass Webapp</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<style>
+    .compassWelcome{
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      font-size: 21.5px;
+    }
+    .topCard{
+      height: 35vh;
+      width: 100%;
+      background-color: #07c;
+      outline: 10px solid #07c;
+    }
+    .studentName{
+      font-family: 'Roboto', sans-serif;
+      font-size: 60px;
+      line-height: 85px;
+      color: white;
+    }
+    .studentSchool{
+      font-family: 'Roboto', sans-serif;
+      font-size: 25px;
+      font-weight: normal;
+      line-height: 25px;
+      color: white;
+    }
+    h1{
+      display: inline-block;
+      font-size: 1px;
+    }
+    .image{
+      height: auto;
+      width: 220px;
+      padding-left: 5vw;
+      padding-bottom: 5vw;
+    }
+    .dayplanCard{
+      height: 1px;
+      width: 30vw;
+      background-color: #ffffff;
+    }
+    .dayplanTitle{
+      font-family: 'Roboto', sans-serif;
+      font-size: 25px;
+      font-weight: normal;
+      line-height: 25px;
+      color: #07c;
+    }
+    .link:hover{
+
+    }
+    .learningTask{
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+    }
+    </style>
+
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script  src="js/index.js"></script>
+
+<body>
+  <nav>
+  <div class="container">
+    <a href="#" class="compassWelcome">Hi, Welcome to Compass!</a>
+    <button>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="navbar-menu">
+      <li class="link"><a href="#">Home</a></li>
+      <li class="link"><a href="#">Learning Tasks</a></li>
+      <li class="link"><a href="#">Notifications</a></li>
+      <li class="link"><a href="#">Reports</a></li>
+      <li class="link"><a href="#">Conferences</a></li>
+    </ul> 
+  </div>
+</nav>
+
+<div class="topCard">
+	<img class="image" src="https://materiell.com/wp-content/uploads/2015/03/doug_full1.png">
+  <h1 style="padding-top: 22vh; padding-left: 1vw;">
+    <b class="studentName">John Smith</b><br />
+    <b class="studentSchool">Sunnydale Secondary College</b>
+  </h1>
+</div>
+
+<div class="w3-panel w3-white w3-card w3-display-container" style="display: inline-block; margin: 5vh 2vw; height:48vh; width:40vw; border-radius: 12.5px;">
+    <p class="dayplanTitle" style="margin-bottom:35px; margin-top:29px;"><b>Tuesday 18th February</b></p>
+    <p style=" display: inline-block;">Maths</p> 
+    <p style="display: inline-block; margin-left:33.9vw;">C2</p>
+    <hr class="w3-border-grey" style="margin:auto;width:100%">
+    <p style=" display: inline-block;">Maths</p>
+    <p style="display: inline-block; margin-left:33.9vw;">C2</p>
+    <hr class="w3-border-grey" style="margin:auto;width:100%">
+    <p style=" display: inline-block;">Digital Media</p>
+    <p style="display: inline-block; margin-left:31.1vw;">S11</p>
+    <hr class="w3-border-grey" style="margin:auto;width:100%">
+    <p style=" display: inline-block;">Digital Media</p>
+    <p style="display: inline-block; margin-left:31.1vw;">S11</p>
+    <hr class="w3-border-grey" style="margin:auto;width:100%">
+    <p style=" display: inline-block;">English</p>
+    <p style=" display: inline-block; margin-left:33.4vw;">LIB</p>
+    <hr class="w3-border-grey" style="margin:auto;width:100%">
+    <p style=" display: inline-block;">Science</p>
+    <p style=" display: inline-block; margin-left:32.5vw;">DCL1</p>
+    <p class="w3-text-blue" style="margin-top:25px; margin-left:33.9vw;">VIEW MORE</p>
+</div>
+
+<div class="w3-panel w3-white w3-card w3-display-container" style="display: inline-block; margin-top: 3vh; height:48vh; width:40vw; border-radius: 12.5px;">
+    <p class="dayplanTitle" style="margin-bottom:35px; margin-top:29px;"><b>Learning Tasks</b></p>
+    <p style=" display: inline-block;">Maths</p> 
+    <p style="display: inline-block; margin-left:33.9vw;">C2</p>
+    <hr class="w3-border-grey" style="margin:auto;width:100%">
+    <p style=" display: inline-block;">Maths</p>
+    <p style="display: inline-block; margin-left:33.9vw;">C2</p>
+    <hr class="w3-border-grey" style="margin:auto;width:100%">
+    <p style=" display: inline-block;">Digital Media</p>
+    <p style="display: inline-block; margin-left:31.1vw;">S11</p>
+    <hr class="w3-border-grey" style="margin:auto;width:100%">
+    <p style=" display: inline-block;">Digital Media</p>
+    <p style="display: inline-block; margin-left:31.1vw;">S11</p>
+    <hr class="w3-border-grey" style="margin:auto;width:100%">
+    <p style=" display: inline-block;">English</p>
+    <p style=" display: inline-block; margin-left:33.4vw;">LIB</p>
+    <hr class="w3-border-grey" style="margin:auto;width:100%">
+    <p style=" display: inline-block;">Science</p>
+    <p style=" display: inline-block; margin-left:32.5vw;">DCL1</p>
+    <p class="w3-text-blue" style="margin-top:25px; margin-left:33.9vw;">VIEW MORE</p>
+</div>
+
+</div>
+
+</body>
+</html>
