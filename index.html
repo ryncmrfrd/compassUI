@@ -1,169 +1,61 @@
-<!DOCTYPE html>
-<html lang="en" >
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Compass for Web</title>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Compass Webapp</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="style.css">
-</head>
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
 
-<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<script  src="index.js"></script>
+    </style>
+  </head>
 
-<style>
-    .compassWelcome{
-      font-family: 'Roboto', sans-serif;
-      font-weight: bold;
-      font-size: 21.5px;
-      color: #07c;
-    }
-    .topLinks{
-      color: black;
-      font-weight: normal;
-      opacity: 0.8;
-    }
-    .topCard{
-      height: 35vh;
-      width: 100%;
-      background-color: #07c;
-      outline: 10px solid #07c;
-    }
-    .studentName{
-      font-family: 'Roboto', sans-serif;
-      font-size: 60px;
-      line-height: 85px;
-      color: white;
-    }
-    .studentSchool{
-      font-family: 'Roboto', sans-serif;
-      font-size: 25px;
-      font-weight: normal;
-      line-height: 25px;
-      color: white;
-    }
-    h1{
-      display: inline-block;
-      font-size: 1px;
-    }
-    .image{
-      height: auto;
-      width: 220px;
-      padding-left: 5vw;
-      padding-bottom: 5vw;
-    }
-    .dayplanCard{
-      height: 1px;
-      width: 30vw;
-      background-color: #ffffff;
-    }
-    .dayplanTitle{
-      font-family: 'Roboto', sans-serif;
-      font-size: 25px;
-      font-weight: normal;
-      line-height: 25px;
-      color: #07c;
-    }
-    .learningTask{
-      border-radius: 50%;
-      height: 100px;
-      width: 100px;
-    }
-</style>
-	
-<body>
-  <nav>
-  <div class="container">
-    <a href="#" class="compassWelcome">Hi, Welcome to Compass!</a>
-    <button>
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <ul class="navbar-menu">
-      <li class="link"><a href="#"><b class="topLinks">Home</b></a></li>
-      <li class="link"><a href="#"><b class="topLinks">Learning Tasks</b></a></li>
-      <li class="link"><a href="#"><b class="topLinks">Notifications</b></a></li>
-      <li class="link"><a href="#"><b class="topLinks">Reports</b></a></li>
-      <li class="link"><a href="#"><b class="topLinks">Conferences</b></a></li>
-    </ul> 
-  </div>
-</nav>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-<div class="topCard">
-	<img class="image" src="https://materiell.com/wp-content/uploads/2015/03/doug_full1.png">
-  <h1 style="padding-top: 22vh; padding-left: 1vw;">
-    <b class="studentName">John Smith</b><br />
-    <b class="studentSchool">Sunnydale Secondary College</b>
-  </h1>
-</div>
+      <!-- Start Header -->
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+        <p class="compassWelcome"><b>Compass for Web</b></p>
 
-<div class="w3-panel w3-white w3-card w3-display-container" style="display: inline-block; margin-top: 3vh; margin-right: 2vw; margin-left: 2vw; height:48vh; width:25.3vw; border-radius: 12.5px;">
-  <p class="dayplanTitle" style="margin-bottom:35px; margin-top:29px;"><b>Tuesday 18th February</b></p>
-  <p style=" display: inline-block;">Maths</p> 
-  <p style="display: inline-block; margin-left:20vw;">C2</p>
-  <hr class="w3-border-grey" style="margin:auto;width:100%">
-  <p style=" display: inline-block;">Maths</p>
-  <p style="display: inline-block; margin-left:20vw;">C2</p>
-  <hr class="w3-border-grey" style="margin:auto;width:100%">
-  <p style=" display: inline-block;">Digital Media</p>
-  <p style="display: inline-block; margin-left:17.3vw;">S11</p>
-  <hr class="w3-border-grey" style="margin:auto;width:100%">
-  <p style=" display: inline-block;">Digital Media</p>
-  <p style="display: inline-block; margin-left:17.3vw;">S11</p>
-  <hr class="w3-border-grey" style="margin:auto;width:100%">
-  <p style=" display: inline-block;">English</p>
-  <p style=" display: inline-block; margin-left:19.5vw;">LIB</p>
-  <hr class="w3-border-grey" style="margin:auto;width:100%">
-  <p style=" display: inline-block;">Science</p>
-  <p style=" display: inline-block; margin-left:18.7vw;">DCL1</p>
-  <p class="w3-text-blue" style="margin-top:5px; margin-left:19.1vw;">VIEW MORE</p>
-</div>
+        <div class="android-header-spacer mdl-layout-spacer"></div>
 
-<div class="w3-panel w3-white w3-card w3-display-container" style="display: inline-block; margin-top: 3vh; margin-right: 2vw; height:48vh; width:40vw; border-radius: 12.5px;">
-    <p class="dayplanTitle" style="margin-bottom:35px; margin-top:29px;"><b>Learning Tasks</b></p>
-    <p style=" display: inline-block;">Maths</p> 
-    <p style="display: inline-block; margin-left:33.9vw;">C2</p>
-    <hr class="w3-border-grey" style="margin:auto;width:100%">
-    <p style=" display: inline-block;">Maths</p>
-    <p style="display: inline-block; margin-left:33.9vw;">C2</p>
-    <hr class="w3-border-grey" style="margin:auto;width:100%">
-    <p style=" display: inline-block;">Digital Media</p>
-    <p style="display: inline-block; margin-left:31.1vw;">S11</p>
-    <hr class="w3-border-grey" style="margin:auto;width:100%">
-    <p style=" display: inline-block;">Digital Media</p>
-    <p style="display: inline-block; margin-left:31.1vw;">S11</p>
-    <hr class="w3-border-grey" style="margin:auto;width:100%">
-    <p style=" display: inline-block;">English</p>
-    <p style=" display: inline-block; margin-left:33.4vw;">LIB</p>
-    <hr class="w3-border-grey" style="margin:auto;width:100%">
-    <p style=" display: inline-block;">Science</p>
-    <p style=" display: inline-block; margin-left:32.5vw;">DCL1</p>
-    <p class="w3-text-blue" style="margin-top:5px; margin-left:33.9vw;">VIEW MORE</p>
-</div>
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Learning Tasks</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Notifications</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Reports</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Conferences</a>
+            </nav>
+          </div>
 
-<div class="w3-panel w3-white w3-card w3-display-container" style="display: inline-block; margin-top: 3vh; height:48vh; width:25.3vw; border-radius: 12.5px;">
-  <p class="dayplanTitle" style="margin-bottom:35px; margin-top:29px;"><b>Notifications</b></p>
-  <p style=" display: inline-block;">Maths</p> 
-  <p style="display: inline-block;">C2</p>
-  <hr class="w3-border-grey" style="margin:auto;width:100%">
-  <p style=" display: inline-block;">Maths</p>
-  <p style="display: inline-block;">C2</p>
-  <hr class="w3-border-grey" style="margin:auto;width:100%">
-  <p style=" display: inline-block;">Digital Media</p>
-  <p style="display: inline-block;">S11</p>
-  <hr class="w3-border-grey" style="margin:auto;width:100%">
-  <p style=" display: inline-block;">Digital Media</p>
-  <p style="display: inline-block;">S11</p>
-  <hr class="w3-border-grey" style="margin:auto;width:100%">
-  <p style=" display: inline-block;">English</p>
-  <p style=" display: inline-block;">LIB</p>
-  <hr class="w3-border-grey" style="margin:auto;width:100%">
-  <p style=" display: inline-block;">Science</p>
-  <p style=" display: inline-block;">DCL1</p>
-  <p class="w3-text-blue" style="margin-top:5px; margin-left:19.1vw;">VIEW MORE</p>
-</div>
+      </div>
+      <!-- End Header -->
+      
+      <!-- Start Topcard -->
+      <div class="topCard">
+          <img class="image" src="https://materiell.com/wp-content/uploads/2015/03/doug_full1.png">
+          <b class="studentName">John Smith</b>
+      </div>
+      <!-- End Topcard -->
 
-</body>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
 </html>
