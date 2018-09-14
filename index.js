@@ -1,22 +1,5 @@
-$(document).ready(function () {
-  
-  'use strict';
-  
-   var c, currentScrollTop = 0,
-       navbar = $('nav');
+var d = new Date();
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+var days = ["0","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 
-   $(window).scroll(function () {
-      var a = $(window).scrollTop();
-      var b = navbar.height();
-     
-      currentScrollTop = a;
-     
-      if (c < currentScrollTop && a > b + b) {
-        navbar.addClass("scrollUp");
-      } else if (c > currentScrollTop && !(a <= b)) {
-        navbar.removeClass("scrollUp");
-      }
-      c = currentScrollTop;
-  });
-  
-});
+document.getElementById("date").innerHTML = " " + days[d.getDay()] + ", " +  d.getDate() + " " + months[d.getMonth()] + " " + d.getFullYear();s
