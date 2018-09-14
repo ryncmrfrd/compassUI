@@ -1,117 +1,68 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Compass For Web</title>
+<!DOCTYPE html>
+<html lang="en" >
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css" />
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
-  </head>
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary" >
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <h3>Compass for Web</h3>
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="#overview" class="mdl-layout__tab is-active">Home</a>
-          <a href="#features" class="mdl-layout__tab">Features</a>
-          <a href="#features" class="mdl-layout__tab">Details</a>
-          <a href="#features" class="mdl-layout__tab">Technology</a>
-          <a href="#features" class="mdl-layout__tab">FAQ</a>
-        </div>
+<head>
+  <title>Compass Webapp</title>
+  
+  <link rel="stylesheet" href="https://unpkg.com/picnic">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+
+<body >
+    <article class="card large">
+      <header>
+        <span class="label label-fixed" style="font-size: 25px;">Compass for Web</span>
       </header>
-      <main class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="overview">
+      <footer>
           
+        <article class="card">
+          <header>
+            <h1 style="margin-top: 10px;">John Smith</h1><br>
+            <h4 style="margin-top: 20px;">Sandringham Secondary College</h4>
+          </header>
+          <footer>
+            <button class="success">View Account</button>
+          </footer>
+        </article>
 
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">play_circle_filled</i>
+        <article class="card">
+            <header>
+                <h1 class="inline" style="margin-top: 10px;"><span class="label label-normal inline">Today</span><b id="date"> If you see this then my "fetch date" code is broken.</b></h1>
+                <script src="index.js"></script>
             </header>
+            <footer>
+                <button data-tooltip="This would lead to the room page." class="dangerous tooltip-left small">C2</button>
+              <h4>Math</h4><button data-tooltip="This would lead to the room page." class="dangerous tooltip-left">C2</button>
+              <h4>Math</h4><button data-tooltip="This would lead to the room page." class="dangerous tooltip-left">S11</button>
+              <h4>Digital Media</h4><button data-tooltip="This would lead to the room page." class="dangerous tooltip-left">S11</button>
+              <h4>Digital Media</h4><button data-tooltip="This would lead to the room page." class="dangerous tooltip-left">LIB</button>
+              <h4>English</h4><button data-tooltip="This would lead to the room page." class="dangerous tooltip-left">DCL1</button>
+              <h4>Science</h4>
+            </footer>
+        </article>
 
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>John Smith</h4>
-                Sandringham Secondary College
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">View Account</a>
-              </div>
+        <article class="card">
+          <header>
+            <h1 style="margin-top: 10px;">News</h1><br>
+          </header>
+          <footer>
+            <div>
+              <input type="checkbox" id="cardtoggle">
+              <article class="card">
+                <header>
+                  <h3 style="margin-left: 10px; margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                  <label for="cardtoggle" class="close">×</a>
+                </header>
+                <footer>
+                  <h4 style="margin-left: 10px;">Vivamus vehicula enim et mi rhoncus vehicula. Vestibulum ullamcorper mollis ipsum at mattis. Nullam eu felis at elit scelerisque suscipit. Aliquam erat volutpat. Maecenas pulvinar varius neque, vel tempor ipsum egestas volutpat. Duis nulla libero, laoreet non urna quis, elementum consequat sapien. Curabitur dapibus arcu nec magna pharetra, sed eleifend elit mattis.</h4>
+                </footer>
+              </article>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-              <li class="mdl-menu__item">Logout</li>
-              <li class="mdl-menu__item" disabled>Access Parent Portal</li>
-            </ul>
-          </section>
+          </footer>
+        </article>
 
-
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" style="margin-bottom: 3.5vh;">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h4 class="mdl-cell mdl-cell--12-col">Thursday, 6 September 2018</h4>
-
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone" style="padding-top: 0.1vw;">
-                  <h5>Math<b style="margin-left: 37.1vw;">C2</b></h5>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Maths<b style="margin-left: 36.7vw;">C2</b></h5>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Digital Media<b style="margin-left: 34vw;">S11</b></h5>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Digital Media<b style="margin-left: 34vw;">S11</b></h5>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>English<b style="margin-left: 36.2vw">LIB</b></h5>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Science<b style="margin-left: 35.4vw;">DCL1</b></h5>
-                </div>
-                
-            </div>
-          </section>
-        </div>
-
-
-        <div class="mdl-layout__tab-panel" id="features" style="margin-bottom: 32vw">
-        </div>
-
-        <footer class="mdl-mega-footer" style="height: 4.4vh">
-            <div class="mdl-logo"style="margin-top: 1.5vh">
-              Ryan Comerford
-            </div>
-            <ul class="mdl-mega-footer--link-list"style="margin-top: 1.5vh">
-              <li><a href="https://ryncmrfrd.me">ryncmrfrd.me</a></li>
-            </ul>
-        </footer>
-
-      </main>
-    </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  </body>
+</body>
 </html>
